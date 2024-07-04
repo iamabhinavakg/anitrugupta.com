@@ -1,0 +1,73 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  #content div { display: none; }
+</style>
+<style>
+  .styled-line {
+    width: 80%;
+    height: 5px;
+    background-color: rgb(217, 255, 0);
+    border: none;
+    margin: 20px 0;
+  }
+</style>
+<script>
+  function showContent() {
+    var contents = document.querySelectorAll('#content div');
+    contents.forEach(function(content){
+      content.style.display = 'none';
+    });
+    var selectedValue = document.getElementById('options').value;
+    document.getElementById(selectedValue).style.display = 'block';
+  }
+</script>
+</head>
+<img src="1.JPG" alt="New Born" width=100 height=150>
+<img src="2.JPG" alt="New Born" width=150 height=200>
+<img src="3.JPG" alt="New Born" width=200 height=250>
+<img src="4.JPG" alt="New Born" width=200 height=300>
+<style>
+  body {
+    margin: 10;
+    padding: 10;
+#    display: flex;
+#  flex-direction: column;
+#    align-items: flex-start;
+  }
+</style>
+<h1 style="color: Green;">Welcome to Anitru's page</h1>
+<hr class="styled-line">
+<p><strong>My name is Anitru and I am 9 years old. Anitru is a very unique name and I am the first person in the world to have it</strong></p>
+<label for="options">Choose an option:</label>
+<select id="options" name="options" onchange="showContent()">
+  <option value="option0">Choose </option>
+  <option value="option1">Basic Details</option>
+  <option value="option2">Activities</option>
+  <option value="option3">Achievements</option>
+</select>
+
+<div id="content">
+  <div id="option1">
+    <h2>NAME: Anitru Gupta</h2>
+    <p> Other details are under progress</P>
+  </div>
+  <div id="option2">
+    <h2>My Activities</h2>
+    <p> Swimming, Horse Riding, Chess, Running</P>
+  </div>
+  <div id="option3">
+    <h2>My Acheivements</h2>
+    <p> Horse Riding championship</P>
+  </div>
+</div>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCR2P8JMXH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FCR2P8JMXH');
+</script>
